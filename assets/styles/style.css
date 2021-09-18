@@ -40,6 +40,7 @@
 
 /*projects container wih each project card*/
 .projects-container {
+  padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -47,6 +48,7 @@
 }
 
 .project-card {
+  margin: 10px;
   border: 1px solid black;
   padding: 20px;
   text-align: center;
@@ -54,4 +56,13 @@
 }
 .project-card img {
   width: 100%;
+}
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-links {
+  padding: 20px;
 }
