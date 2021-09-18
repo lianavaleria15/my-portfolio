@@ -49,4 +49,9 @@
 .project-card {
   border: 1px solid black;
   padding: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+.project-card img {
+  width: 100%;
 }
