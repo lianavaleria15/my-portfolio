@@ -37,9 +37,16 @@
   max-width: 400px;
   padding: 25px 0px;
 }
+
+/*projects container wih each project card*/
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.project-card {
+  border: 1px solid black;
+  padding: 20px;
 }
