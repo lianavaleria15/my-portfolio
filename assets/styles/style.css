@@ -1,5 +1,5 @@
 .header {
-  margin: 30px;
+  /* padding: 20px; */
 }
 
 .navlinks-container {
@@ -8,8 +8,22 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
+  border: 1px solid black;
+  padding: 10px 20px;
 }
 
 .navbar-links {
   padding: 10px;
+}
+
+.main {
+}
+
+.about-section {
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
