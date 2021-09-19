@@ -75,12 +75,26 @@
   border: 1px solid black;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*media query properties for different viewport sizes*/
 
 /* x-small devices*/
 @media screen and (max-width: 576px) {
+  /*change flex-direction for navbar and about-me section*/
+  .navlinks-container,
+  .about-container,
+  .projects-container,
+  .footer {
+    flex-direction: column;
+    align-content: center;
+  }
+  .project-card:first-child {
+    margin: 10px;
+  }
 }
 
 /*small devices*/
