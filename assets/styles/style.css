@@ -14,6 +14,7 @@
 
 .navbar-links {
   padding: 10px;
+  font-size: larger;
 }
 
 .main {
@@ -53,6 +54,10 @@
   padding: 20px;
   text-align: center;
   line-height: 30px;
+}
+/*pseudo-class function to change the size of the first project card*/
+.project-card:first-child {
+  width: 100%;
 }
 .project-card img {
   width: 100%;
