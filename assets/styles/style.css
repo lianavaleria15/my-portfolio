@@ -19,9 +19,11 @@
 
 .main {
 }
-
+.about-section {
+}
 .about-section h1 {
   text-align: center;
+  width: 100%;
 }
 
 /*about me section with h2 and about-me container*/
@@ -32,6 +34,7 @@
   justify-content: space-around;
   border: 1px solid black;
   padding: 40px;
+  margin: 20px;
 }
 
 .about-container p {
@@ -59,7 +62,7 @@
 }
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
-  width: 90%;
+  width: 100%;
 }
 .project-card img {
   width: 100%;
@@ -94,6 +97,9 @@
     flex-direction: column;
     align-content: center;
   }
+  .about-section img {
+    max-width: fit-content;
+  }
 }
 
 /*small devices*/
@@ -113,10 +119,11 @@
 
 /*large devices*/
 @media screen and (max-width: 1200px) {
-  .project-card img {
-    width: 400px;
-  }
 }
 
 /*extra large devices*/
-@media screen and (max-width: 1400px);
+@media screen and (min-width: 1400px) {
+  /* .project-card:first-child {
+    max-width: fit-content;
+  } */
+} ;
