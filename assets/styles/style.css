@@ -45,10 +45,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: fit-content;
 }
 
 .project-card {
+  /* width: 300px; */
   margin: 10px;
   border: 1px solid black;
   padding: 20px;
@@ -57,7 +59,7 @@
 }
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
-  width: 100%;
+  width: 90%;
 }
 .project-card img {
   width: 100%;
@@ -92,13 +94,17 @@
     flex-direction: column;
     align-content: center;
   }
-  .project-card:first-child {
-    margin: 10px;
-  }
 }
 
 /*small devices*/
 @media screen and (max-width: 768px) {
+  .navlinks-container,
+  .about-container,
+  .projects-container,
+  .contacts-container {
+    flex-direction: column;
+    align-content: center;
+  }
 }
 
 /*medium devices*/
@@ -107,6 +113,9 @@
 
 /*large devices*/
 @media screen and (max-width: 1200px) {
+  .project-card img {
+    width: 400px;
+  }
 }
 
 /*extra large devices*/
