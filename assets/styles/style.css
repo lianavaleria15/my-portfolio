@@ -63,7 +63,6 @@
   padding: 20px;
   text-align: center;
   line-height: 30px;
-  width: 500px;
 }
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
@@ -102,9 +101,6 @@
     flex-direction: column;
     align-content: center;
   }
-  .project-card {
-    width: 100%;
-  }
 }
 
 /*small devices*/
@@ -117,9 +113,6 @@
     flex-direction: column;
     align-content: center;
   }
-  .project-card {
-    width: 100%;
-  }
 }
 
 /*medium devices*/
@@ -128,11 +121,20 @@
 
 /*large devices*/
 @media screen and (max-width: 1200px) {
+  .project-card:first-child {
+    max-width: 50%;
+  }
+  .project-card {
+    max-width: 400px;
+  }
 }
 
 /*extra large devices*/
 @media screen and (min-width: 1400px) {
-  /* .project-card:first-child {
-    max-width: fit-content;
-  } */
+  .project-card:first-child {
+    max-width: 50%;
+  }
+  .project-card {
+    max-width: 400px;
+  }
 } ;
