@@ -18,13 +18,19 @@
 }
 
 .main {
+  /* background-color: blueviolet; */
 }
 .about-section {
+  /* margin: 0px 20px; */
+  background-color: burlywood;
+  padding: 20px;
+  margin: 0 30px;
+  border: 1px solid black;
 }
 .about-section h1 {
   text-align: center;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px;
   font-size: 40px;
 }
 
@@ -33,17 +39,17 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 1px solid black;
   padding: 40px;
-  margin: 20px;
 }
-
-.about-container p {
-  max-width: 400px;
-  padding: 25px 0px;
+.about-container img {
+  border: 1px solid black;
+  padding: 20px;
 }
-
+.about-item {
+  width: 50%;
+}
 /*projects container wih each project card*/
 .projects-container {
   padding: 50px 20px;
@@ -112,6 +118,12 @@
   .contacts-container {
     flex-direction: column;
     align-content: center;
+  }
+  .about-section {
+    justify-content: space-between;
+  }
+  .about-section img {
+    max-width: fit-content;
   }
 }
 
