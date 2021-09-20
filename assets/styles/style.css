@@ -18,11 +18,10 @@
 }
 
 .main {
-  /* background-color: blueviolet; */
+  font-family: "Gideon Roman", cursive;
+  line-height: 25px;
 }
 .about-section {
-  /* margin: 0px 20px; */
-  background-color: burlywood;
   padding: 20px;
   margin: 0 30px;
   border: 1px solid black;
@@ -47,9 +46,7 @@
   border: 1px solid black;
   padding: 20px;
 }
-.about-item {
-  width: 50%;
-}
+
 /*projects container wih each project card*/
 .projects-container {
   padding: 50px 20px;
@@ -105,25 +102,17 @@
     flex-direction: column;
     align-content: center;
   }
-  .about-section img {
-    max-width: fit-content;
-  }
 }
 
 /*small devices*/
 @media screen and (max-width: 768px) {
   .navlinks-container,
   .about-container,
+  .about-item,
   .projects-container,
   .contacts-container {
     flex-direction: column;
     align-content: center;
-  }
-  .about-section {
-    justify-content: space-between;
-  }
-  .about-section img {
-    max-width: fit-content;
   }
 }
 
