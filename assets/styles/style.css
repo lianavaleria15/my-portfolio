@@ -10,6 +10,11 @@
   --cultured: #f5f3f4ff;
   --white: #ffffffff;
 }
+.body {
+  font-family: "Gideon Roman", cursive;
+  line-height: 25px;
+  background-color: var(--imperial-red);
+}
 .header {
   background-color: var(--cultured);
 }
@@ -35,48 +40,39 @@
 }
 .navbar-links a:hover {
   color: var(--imperial-red);
+  font-size: 1.6rem;
+  border-bottom: 0.2rem solid var(--rich-black-fogra-39);
 }
-.main {
-  font-family: "Gideon Roman", cursive;
-  line-height: 25px;
-}
-.about-section {
-  padding: 20px;
-  margin: 0 30px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.about-section h1,
-h2 {
-  text-align: center;
-  width: 100%;
-  padding: 30px;
-  margin: 15px;
-  border: 1px solid black;
-}
-.about-section h1 {
-  font-size: 8rem;
-}
-.about-section h2 {
-  font-size: 6rem;
-}
-/*about me section with h2 and about-me container*/
+
+/*about me section with image and about-me text container*/
 .about-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid black;
-  padding: 40px;
+  justify-content: space-around;
+  padding: 4rem;
   object-fit: contain;
+  background-color: var(--white);
 }
+
 .about-container img {
-  border: 1px solid black;
-  padding: 20px;
+  border: 1px solid var(--silver-chalice);
+  padding: 10px;
   width: 12rem;
-  border-radius: 75%;
+  border-radius: 20%;
+}
+
+.about-item {
+  color: var(--silver-chalice);
+}
+
+.about-item h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-item p {
+  text-align: justify;
 }
 
 /*projects container wih each project card*/
@@ -86,11 +82,12 @@ h2 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  background-color: var(--cultured);
 }
 
 .project-card {
   margin: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* padding: 20px; */
   text-align: center;
   line-height: 30px;
@@ -133,16 +130,12 @@ h2 {
   border: 1px solid black;
   padding: 20px;
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 /*media query properties for different viewport sizes*/
 
 /* x-small devices*/
-@media screen and (max-width: 576px) {
-  /*change flex-direction for navbar and about-me section*/
+@media screen and (min-width: 0px) (max-width: 576px) {
   .navlinks-container,
   .about-container,
   .projects-container,
@@ -151,42 +144,25 @@ h2 {
     flex-wrap: wrap;
     align-content: center;
   }
-  .about-section {
-    padding: 10px;
-    margin: 0px;
-  }
-  .about-section h1 {
-    font-size: 3rem;
-  }
-  .about-section h2 {
-    font-size: 2rem;
-  }
   .about-container img {
     max-width: 8rem;
+  }
+  .about-container h1 {
+    font-size: 0.5rem;
   }
 }
 
 /*small devices*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577) and (max-width: 768px) {
   .navlinks-container,
-  .about-container,
-  .footer {
+  .about-container {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
   }
   .projects-container {
     flex-direction: column;
-    align-content: space-between;
-  }
-  .about-section h1 {
-    font-size: 3rem;
-  }
-  .about-section h2 {
-    font-size: 2rem;
-  }
-  .about-container img {
-    max-width: 10rem;
+    align-content: center;
   }
 }
 
