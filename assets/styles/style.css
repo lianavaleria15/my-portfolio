@@ -90,6 +90,9 @@ h2 {
 .project-card img {
   width: 100%;
 }
+.my-contacts h5 {
+  text-align: center;
+}
 .contacts-container {
   display: flex;
   flex-wrap: wrap;
@@ -116,8 +119,9 @@ h2 {
   .navlinks-container,
   .about-container,
   .projects-container,
-  .footer {
+  .contacts-container {
     flex-direction: column;
+    flex-wrap: wrap;
     align-content: center;
   }
   .about-section {
