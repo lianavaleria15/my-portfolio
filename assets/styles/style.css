@@ -13,7 +13,7 @@
 .body {
   font-family: "Gideon Roman", cursive;
   line-height: 25px;
-  background-color: var(--imperial-red);
+  background-color: var(--light-gray);
 }
 .header {
   background-color: var(--cultured);
@@ -69,10 +69,12 @@
 .about-item h1 {
   text-align: center;
   padding: 20px;
+  color: var(--eerie-black);
 }
 
 .about-item p {
   text-align: justify;
+  color: var(--blood-red);
 }
 
 /*projects container wih each project card*/
@@ -81,14 +83,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background-color: var(--cultured);
 }
 
 .project-card {
   margin: 10px;
-  /* border: 1px solid black; */
-  /* padding: 20px; */
   text-align: center;
   line-height: 30px;
   width: 18rem;
@@ -97,7 +97,7 @@
 }
 
 /*here animation for project cards when hovered*/
-.project-card:hover {
+.project-card:hover:not(:first-child) {
   animation: grow 0.5s ease-out;
   transform: scale(1.2);
   z-index: 2;
@@ -105,8 +105,8 @@
 
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
-  width: 100%;
-  height: 100%;
+  width: 32rem;
+  height: 32rem;
   object-fit: contain;
 }
 .project-card img {
@@ -126,7 +126,7 @@
   text-align: center;
 }
 .contacts-container {
-  margin: 20px;
+  background-color: var(--carnelian);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -134,6 +134,7 @@
 }
 .contact-links {
   text-decoration: none;
+  margin-bottom: 10px;
   padding: 5px 20px;
   font-size: 1.2rem;
   color: var(--white);
@@ -142,9 +143,12 @@
   border-bottom: 0.1rem solid var(--eerie-black);
 }
 .footer {
-  border: 1px solid black;
   padding: 20px;
   text-align: center;
+  background-color: var(--cultured);
+}
+.footer h4 {
+  color: var(--eerie-black);
 }
 
 /*media query properties for different viewport sizes*/
