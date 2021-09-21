@@ -143,11 +143,14 @@ h2 {
 @media screen and (max-width: 768px) {
   .navlinks-container,
   .about-container,
-  .projects-container,
   .footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+  }
+  .projects-container {
+    flex-direction: column;
+    align-content: space-between;
   }
   .about-section h1 {
     font-size: 3rem;
@@ -162,6 +165,8 @@ h2 {
 
 /*medium devices*/
 @media screen and (min-width: 992px) {
+  .projects-container {
+  }
 }
 
 /*large devices*/
