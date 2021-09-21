@@ -10,6 +10,10 @@
   justify-content: flex-end;
   border: 1px solid black;
   padding: 10px 20px;
+  /* position: fixed;
+  margin-top: 0;
+  width: 100%;
+  z-index: 2; */
 }
 
 .navbar-links {
@@ -30,7 +34,7 @@
   text-align: center;
   width: 100%;
   padding: 30px;
-  font-size: 40px;
+  font-size: 10rem;
 }
 
 /*about me section with h2 and about-me container*/
@@ -53,8 +57,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  width: fit-content;
+  justify-content: space-between;
 }
 
 .project-card {
@@ -63,10 +66,13 @@
   padding: 20px;
   text-align: center;
   line-height: 30px;
+  width: 18rem;
+  object-fit: contain;
 }
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
   width: 100%;
+  object-fit: contain;
 }
 .project-card img {
   width: 100%;
@@ -107,34 +113,22 @@
 @media screen and (max-width: 768px) {
   .navlinks-container,
   .about-container,
-  .about-item,
   .projects-container,
-  .contacts-container {
+  .footer {
     flex-direction: column;
+    flex-wrap: wrap;
     align-content: center;
   }
 }
 
 /*medium devices*/
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
 }
 
 /*large devices*/
-@media screen and (max-width: 1200px) {
-  .project-card:first-child {
-    max-width: 50%;
-  }
-  .project-card {
-    max-width: 400px;
-  }
+@media screen and (min-width: 1200px) {
 }
 
 /*extra large devices*/
 @media screen and (min-width: 1400px) {
-  .project-card:first-child {
-    max-width: 50%;
-  }
-  .project-card {
-    max-width: 400px;
-  }
-} ;
+}
