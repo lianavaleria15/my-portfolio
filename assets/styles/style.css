@@ -1,5 +1,17 @@
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #161a1dff;
+  --blood-red: #660708ff;
+  --ruby-red: #a4161aff;
+  --carnelian: #ba181bff;
+  --imperial-red: #e5383bff;
+  --silver-chalice: #b1a7a6ff;
+  --light-gray: #d3d3d3ff;
+  --cultured: #f5f3f4ff;
+  --white: #ffffffff;
+}
 .header {
-  /* padding: 20px; */
+  background-color: var(--cultured);
 }
 
 .navlinks-container {
@@ -8,19 +20,22 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
-  border: 1px solid black;
-  padding: 10px 20px;
+  padding: 20px 20px;
   /* position: fixed;
   margin-top: 0;
   width: 100%;
   z-index: 2; */
 }
 
-.navbar-links {
+.navbar-links a {
+  text-decoration: none;
   padding: 10px;
-  font-size: larger;
+  font-size: 1.4rem;
+  color: var(--ruby-red);
 }
-
+.navbar-links a:hover {
+  color: var(--imperial-red);
+}
 .main {
   font-family: "Gideon Roman", cursive;
   line-height: 25px;
