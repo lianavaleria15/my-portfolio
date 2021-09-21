@@ -55,7 +55,7 @@
   background-color: var(--white);
 }
 
-.about-container img {
+.img-container img {
   border: 0.1rem solid var(--silver-chalice);
   padding: 0.5rem;
   width: 16rem;
@@ -158,7 +158,7 @@
 /*media query properties for different viewport sizes*/
 
 /* x-small devices*/
-@media screen and (min-width: 0px) (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .navlinks-container,
   .about-container,
   .projects-container,
@@ -167,11 +167,11 @@
     flex-wrap: wrap;
     align-content: center;
   }
-  .about-container img {
-    max-width: 8rem;
+  .img-container img {
+    width: 10rem;
   }
   .about-container h1 {
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
 }
 
