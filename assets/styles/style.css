@@ -43,13 +43,46 @@
   font-size: 1.6rem;
   border-bottom: 0.2rem solid var(--rich-black-fogra-39);
 }
-
+.hero-image {
+  background-image: linear-gradient(
+      to top,
+      rgba(214, 34, 34, 0.7),
+      rgba(197, 191, 191, 0.2)
+    ),
+    url("../images/portfolio-images/hero-image.jpg");
+  height: 38rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.hero-image:hover {
+  background-image: url("../images/portfolio-images/hero-image.jpg");
+}
+.hero-image h1,
+h2 {
+  color: var(--white);
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.hero-image h1 {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+}
+.hero-image h2 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
 /*about me section with image and about-me text container*/
 .about-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 4rem;
   object-fit: contain;
   background-color: var(--white);
