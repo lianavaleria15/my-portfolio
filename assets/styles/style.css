@@ -50,7 +50,7 @@
       rgba(197, 191, 191, 0.2)
     ),
     url("../images/portfolio-images/hero-image.jpg");
-  height: 38rem;
+  height: 42rem;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -191,20 +191,38 @@ h2 {
 /*media query properties for different viewport sizes*/
 
 /* x-small devices*/
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 0px) and (max-width: 576px) {
   .navlinks-container,
   .about-container,
   .projects-container,
   .contacts-container {
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
   }
+
+  /* change font-size headings on the banner image */
+  .hero-image h1 {
+    font-size: 4rem;
+  }
+  .hero-image h2 {
+    font-size: 2rem;
+  }
+
+  /* change size image and heading in about me container */
   .img-container img {
     width: 10rem;
   }
   .about-container h1 {
     font-size: 2rem;
+  }
+
+  /*change project cards size*/
+  .project-card:first-child {
+    width: 24rem;
+  }
+  .project-card {
+    width: 12rem;
   }
 }
 
