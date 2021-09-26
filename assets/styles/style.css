@@ -285,12 +285,13 @@ h2 {
 
 /*medium devices*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .about-container img {
-    margin: 5rem;
-    width: 10rem;
-  }
-  about-text {
-    flex: 6 0;
+  .navlinks-container,
+  .about-container,
+  .projects-container,
+  .contacts-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
 
