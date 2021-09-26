@@ -232,11 +232,10 @@ h2 {
 /*media query properties for different viewport sizes*/
 
 /* x-small devices*/
-@media screen and (min-width: 0px) and (max-width: 576px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
 
   .navlinks-container,
   .about-container,
-  .about-item,
   .projects-container,
   .contacts-container {
     flex-direction: column;
@@ -251,27 +250,19 @@ h2 {
   .hero-image h2 {
     font-size: 2rem;
   }
-.about-container h3{
-  font-size: 1.5rem;
-  margin:0;
-}
-  /* change size image and heading in about me container */
-  .about-item img {
-    width: 10rem;
-  }
-  .about-item h4{
-    font-size: 1rem;
-  }
+
+  /* change size image in about me container */
+  .about-container img {
+    margin:0rem;
+  } 
+ 
   .projects-container{
     padding: 0;
   }
 
   /*change project cards size*/
   .project-card:first-child {
-    width: 100%;
-  }
-  .project-card {
-    width: 12rem;
+    width: 90%;
   }
 }
 
