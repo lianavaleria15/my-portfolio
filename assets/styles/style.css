@@ -54,8 +54,8 @@
 .hero-image {
   background-image: linear-gradient(
       to top,
-      rgba(214, 34, 34, 0.7),
-      rgba(197, 191, 191, 0.2)
+      rgba(238, 197, 197, 0.7),
+      rgba(83, 77, 77, 0.2)
     ),
     url("../images/portfolio-images/hero-image.jpg");
   height: 42rem;
@@ -80,6 +80,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6rem;
+  animation: moveInFromLeft 3s ease;
 }
 
 .hero-image h2 {
@@ -87,6 +88,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
+  animation: moveInFromRight 3s ease;
 }
 
 /*about me section with image and text container here*/
@@ -315,7 +317,25 @@ h2 {
 }
 
 /*keyframes for animation functions*/
-@keyframe grow {
+@keyframes moveInFromLeft {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes moveInFromRight {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes grow {
   0% {
     transform: scale(1);
   }
