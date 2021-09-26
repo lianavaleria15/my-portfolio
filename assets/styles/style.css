@@ -95,7 +95,8 @@ h2 {
 .about-section {
   background-color: var(--white);
 }
-.about-section h3 {
+.about-section h3,
+.my-projects h3 {
   text-align: center;
   padding: 3rem;
   font-size: 2rem;
@@ -138,13 +139,15 @@ h2 {
 }
 
 /*projects container styling here*/
+.my-projects {
+  background-color: var(--cultured);
+}
 .projects-container {
   padding: 5rem 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--cultured);
 }
 
 /* each project card styling here*/
