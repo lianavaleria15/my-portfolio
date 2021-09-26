@@ -91,47 +91,50 @@ h2 {
 }
 
 /*about me section with image and text container here*/
+.about-section{
+  background-color: var(--white);
+}
+.about-section h3{
+  text-align: center;
+  padding:3rem;
+  font-size: 2rem;
+  color:var(--imperial-red);
+}
 .about-container {
+  padding: 4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 4rem;
+  justify-content: space-evenly;
   object-fit: contain;
-  background-color: var(--white);
 }
 
-.about-container h3{
- text-align:center;
-  margin:0 10rem;
-  font-size: 2rem;
-  text-align: center;
-  border-bottom: 0.5rem solid var(--blood-red);
-
-}
-
-.about-item img {
+.about-container img {
   margin:10rem;
   border: 0.1rem solid var(--silver-chalice);
   padding: 0.5rem;
   width: 16rem;
   border-radius: 20%;
-  /* float:left; */
+  
+}
+.about-text{
+  flex:6 0;
 }
 
-
-.about-item h4 {
+.about-text h4 {
   margin-top:8rem;
   text-align: center;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--eerie-black);
 }
 
-.about-item p {
+.about-text p {
   text-align: justify;
-  color: var(--blood-red);
+  font-size: 1rem;
   font-weight: 500;
   max-width: 100rem;
+  color: var(--blood-red);
 }
 
 /*projects container styling here*/
