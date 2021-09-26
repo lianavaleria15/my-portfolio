@@ -101,9 +101,9 @@ h2 {
 }
 
 .about-container h3{
-  width:100%;
+ text-align:center;
   margin:0 10rem;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   border-bottom: 0.5rem solid var(--blood-red);
 
@@ -185,12 +185,17 @@ h2 {
 }
 
 /* my contacts section styled here */
-.my-contacts h5 {
+.my-contacts{
+  background-color: var(--carnelian);
+  color: var(--white);
+}
+.my-contacts h3 {
   text-align: center;
+  padding: 2rem;
+  font-size:2rem;
 }
 
 .contacts-container {
-  background-color: var(--carnelian);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -216,8 +221,9 @@ h2 {
   background-color: var(--cultured);
 }
 
-.footer h4 {
+.footer h6 {
   color: var(--eerie-black);
+  font-size:1rem;
 }
 
 /*media query properties for different viewport sizes*/
