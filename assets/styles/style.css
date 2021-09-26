@@ -288,13 +288,15 @@ h2 {
 
 /*medium devices*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .navlinks-container,
-  .about-container,
-  .projects-container,
-  .contacts-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+  .about-container {
+    justify-content: space-around;
+  }
+  .about-container img {
+    margin: 2rem;
+    width: 18rem;
+  }
+  about-text {
+    flex: 6 0;
   }
 }
 
@@ -302,6 +304,7 @@ h2 {
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .about-container img {
     margin: 3rem;
+    width: 20rem;
   }
   about-text {
     flex: 6 0;
