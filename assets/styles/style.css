@@ -148,9 +148,10 @@ h2 {
 
 /* each project card styling here*/
 .project-card {
+  border-radius: 75%;
   margin: 1rem;
   text-align: center;
-  line-height: 3rem;
+  line-height: 1.5rem;
   width: 18rem;
   object-fit: contain;
   position: relative;
