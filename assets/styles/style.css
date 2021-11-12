@@ -148,25 +148,21 @@ h2 {
 
 /* each project card styling here*/
 .project-card {
-  border-radius: 75%;
-  margin: 1rem;
+  margin: 5rem 2rem;
   text-align: center;
   line-height: 1.5rem;
   width: 24rem;
-  object-fit: contain;
-  position: relative;
 }
 
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
   width: 100%;
-  /* height: 32rem; */
   object-fit: contain;
   position: relative;
 }
 
 /*here animation for project cards when hovered*/
-.project-card:hover {
+.project-card:hover:not(:first-child) {
   animation: grow 0.5s ease-out;
   transform: scale(1.2);
   z-index: 2;
@@ -175,26 +171,27 @@ h2 {
 /* project card content styled here */
 .project-card img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
-.project-title {
-  position: absolute;
-  bottom: 0;
+.project-card-content {
+  margin-top: 0;
   background-color: var(--white);
   width: 100%;
   font-size: 1.2rem;
 }
-.project-title:hover {
+
+.project-card-content:hover {
   background-color: var(--ruby-red);
   color: var(--white);
 }
+
 /* my contacts section styled here */
 .my-contacts {
   background-color: var(--carnelian);
   color: var(--white);
 }
+
 .my-contacts h3 {
   text-align: center;
   padding: 2rem;
