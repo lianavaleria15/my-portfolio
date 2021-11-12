@@ -1,0 +1,348 @@
+/* root variable to set the colors for elements */
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #161a1dff;
+  --blood-red: #660708ff;
+  --ruby-red: #a4161aff;
+  --carnelian: #ba181bff;
+  --imperial-red: #e5383bff;
+  --silver-chalice: #b1a7a6ff;
+  --light-gray: #d3d3d3ff;
+  --cultured: #f5f3f4ff;
+  --white: #ffffffff;
+}
+
+/*typography applied here using imported Google fonts*/
+.body {
+  font-family: "Gideon Roman", cursive;
+  line-height: 2.5rem;
+  background-color: var(--light-gray);
+}
+
+/* Header styling here for navbar and the 3 links */
+.header {
+  background-color: var(--cultured);
+}
+
+.navlinks-container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 2rem 2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: var(--ruby-red);
+}
+
+.navbar-links a:hover {
+  color: var(--imperial-red);
+  font-size: 1.6rem;
+  border-bottom: 0.2rem solid var(--rich-black-fogra-39);
+}
+
+/* background image div styling here with hover effect */
+.hero-image {
+  background-image: linear-gradient(
+      to top,
+      rgba(238, 197, 197, 0.7),
+      rgba(83, 77, 77, 0.2)
+    ),
+    url("../images/portfolio-images/hero-image.jpg");
+  height: 42rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-image:hover {
+  background-image: url("../images/portfolio-images/hero-image.jpg");
+}
+
+.hero-image h1,
+h2 {
+  color: var(--white);
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.hero-image h1 {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  animation: moveInFromLeft 3s ease;
+}
+
+.hero-image h2 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  animation: moveInFromRight 3s ease;
+}
+
+/*about me section with image and text container here*/
+.about-section {
+  background-color: var(--white);
+}
+.about-section h3,
+.my-projects h3 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 2rem;
+  color: var(--imperial-red);
+}
+.about-container {
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  object-fit: contain;
+}
+
+.about-container img {
+  margin: 10rem;
+  border: 0.1rem solid var(--silver-chalice);
+  padding: 0.5rem;
+  width: 16rem;
+  border-radius: 20%;
+  object-fit: contain;
+}
+.about-text {
+  flex: 6 0;
+}
+
+.about-text h4 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: var(--eerie-black);
+}
+
+.about-text p {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 100rem;
+  color: var(--blood-red);
+}
+
+/*projects container styling here*/
+.my-projects {
+  background-color: var(--cultured);
+}
+.projects-container {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* each project card styling here*/
+.project-card {
+  margin: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  width: 18rem;
+  object-fit: contain;
+  position: relative;
+}
+
+/*pseudo-class function to change the size of the first project card*/
+.project-card:first-child {
+  width: 32rem;
+  height: 32rem;
+  object-fit: contain;
+  position: relative;
+}
+
+/*here animation for project cards when hovered*/
+.project-card:hover {
+  animation: grow 0.5s ease-out;
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+/* project card content styled here */
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--white);
+  width: 100%;
+  font-size: 1.2rem;
+}
+.project-title:hover {
+  background-color: var(--ruby-red);
+  color: var(--white);
+}
+/* my contacts section styled here */
+.my-contacts {
+  background-color: var(--carnelian);
+  color: var(--white);
+}
+.my-contacts h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-links {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.contact-links:hover {
+  border-bottom: 0.1rem solid var(--eerie-black);
+}
+
+/* footer styled here */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--cultured);
+}
+
+.footer h6 {
+  color: var(--eerie-black);
+  font-size: 1rem;
+}
+
+/*media query properties for different viewport sizes*/
+
+/* x-small devices*/
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .navlinks-container,
+  .about-container,
+  .projects-container,
+  .contacts-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* change font-size headings on the banner image */
+  .hero-image h1 {
+    font-size: 4rem;
+  }
+  .hero-image h2 {
+    font-size: 2rem;
+  }
+
+  /* change size image in about me container */
+  .about-container img {
+    margin: 0rem;
+  }
+
+  .projects-container {
+    padding: 0;
+  }
+
+  /*change project cards size*/
+  .project-card:first-child {
+    width: 90%;
+  }
+}
+
+/*small devices*/
+@media screen and (min-width: 577) and (max-width: 768px) {
+  .navlinks-container,
+  .about-container,
+  .projects-container,
+  .contacts-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .about-container img {
+    margin: 0rem;
+  }
+}
+
+/*medium devices*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .about-container {
+    justify-content: space-around;
+  }
+  .about-container img {
+    margin: 2rem;
+    width: 18rem;
+  }
+  about-text {
+    flex: 6 0;
+  }
+}
+
+/*large devices*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-container img {
+    margin: 3rem;
+    width: 20rem;
+  }
+  about-text {
+    flex: 6 0;
+  }
+}
+
+/*extra large devices*/
+@media screen and (min-width: 1201px) and (min-width: 1400px) {
+  .about-container img {
+    margin: 5rem;
+    width: 25rem;
+  }
+  about-text {
+    margin-top: 15rem;
+    flex: 8 0;
+  }
+}
+
+/*keyframes for animation functions*/
+@keyframes moveInFromLeft {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes moveInFromRight {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
