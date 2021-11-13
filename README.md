@@ -49,6 +49,9 @@ Click [here](https://lianavaleria15.github.io/my-portfolio) to view the deployed
 
 ## Contact Me
 
+For contributing, feedback or any inquiries, feel free to contact me on my email:
+[liana.valeria15@gmail.com](mailto:liana.valeria15@gmail.com)
+
 ## License
 
 ### MIT License
