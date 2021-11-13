@@ -136,7 +136,7 @@ h2 {
 
 /*projects container styling here*/
 .my-projects {
-  background-color: var(--cultured);
+  background-color: var(--white);
 }
 .projects-container {
   padding: 5rem 2rem;
@@ -151,7 +151,7 @@ h2 {
   margin: 5rem 2rem;
   text-align: center;
   line-height: 1.5rem;
-  width: 24rem;
+  width: 48rem;
 }
 
 /*pseudo-class function to change the size of the first project card*/
@@ -176,14 +176,41 @@ h2 {
 
 .project-card-content {
   margin-top: 0;
-  background-color: var(--white);
+  background-color: var(--cultured);
+  color: var(--imperial-red);
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 2rem;
 }
 
-.project-card-content:hover {
-  background-color: var(--ruby-red);
+.project-title {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.btn-container {
+  margin-top: 1px;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-btn {
+  margin-left: 2rem;
+  padding: 0.8rem;
+  border-radius: 5%;
+  background-color: var(--carnelian);
   color: var(--white);
+}
+
+.project-btn:hover {
+  background-color: var(--imperial-red);
+}
+.project-card-content:hover {
+  color: var(--blood-red);
 }
 
 /* my contacts section styled here */
