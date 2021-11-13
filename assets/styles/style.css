@@ -158,7 +158,6 @@ h2 {
 .project-card:first-child {
   width: 100%;
   object-fit: contain;
-  position: relative;
 }
 
 /*here animation for project cards when hovered*/
@@ -263,10 +262,16 @@ h2 {
   .navlinks-container,
   .about-container,
   .projects-container,
+  .btn-container,
   .contacts-container {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  .project-card {
+    width: 18rem;
+    margin: 2rem 0.5rem;
   }
 
   /* change font-size headings on the banner image */
