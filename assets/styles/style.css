@@ -109,10 +109,10 @@ h2 {
 
 .about-container img {
   margin: 10rem;
-  border: 0.1rem solid var(--silver-chalice);
-  padding: 0.5rem;
+  box-shadow: 0 0 15px 8px var(--light-gray);
+  /* padding: 0.5rem; */
   width: 16rem;
-  border-radius: 20%;
+  border-radius: 10%;
   object-fit: contain;
 }
 .about-text {
@@ -295,12 +295,12 @@ h2 {
 
   /*change project cards size*/
   .project-card:first-child {
-    width: 90%;
+    width: 70git a%;
   }
 
   .project-card {
     width: 18rem;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0;
   }
 
   .project-btn {
