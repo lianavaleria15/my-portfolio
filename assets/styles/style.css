@@ -109,10 +109,10 @@ h2 {
 
 .about-container img {
   margin: 10rem;
-  border: 0.1rem solid var(--silver-chalice);
-  padding: 0.5rem;
+  box-shadow: 0 0 15px 8px var(--light-gray);
+  /* padding: 0.5rem; */
   width: 16rem;
-  border-radius: 20%;
+  border-radius: 10%;
   object-fit: contain;
 }
 .about-text {
@@ -136,7 +136,7 @@ h2 {
 
 /*projects container styling here*/
 .my-projects {
-  background-color: var(--cultured);
+  background-color: var(--white);
 }
 .projects-container {
   padding: 5rem 2rem;
@@ -148,24 +148,23 @@ h2 {
 
 /* each project card styling here*/
 .project-card {
-  margin: 1rem;
+  margin: 3rem 2rem;
+  border-radius: 5%;
+  overflow: hidden;
   text-align: center;
-  line-height: 3rem;
-  width: 18rem;
-  object-fit: contain;
-  position: relative;
+  line-height: 1.5rem;
+  width: 48rem;
+  box-shadow: 0 0 15px 8px var(--light-gray);
 }
 
 /*pseudo-class function to change the size of the first project card*/
 .project-card:first-child {
-  width: 32rem;
-  height: 32rem;
+  width: 100%;
   object-fit: contain;
-  position: relative;
 }
 
 /*here animation for project cards when hovered*/
-.project-card:hover {
+.project-card:hover:not(:first-child) {
   animation: grow 0.5s ease-out;
   transform: scale(1.2);
   z-index: 2;
@@ -174,26 +173,58 @@ h2 {
 /* project card content styled here */
 .project-card img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
-.project-title {
-  position: absolute;
-  bottom: 0;
-  background-color: var(--white);
+.project-card-content {
+  margin-top: 0;
+  background-color: var(--cultured);
+  color: var(--imperial-red);
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 2rem;
 }
-.project-title:hover {
-  background-color: var(--ruby-red);
+
+.project-title {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.btn-container {
+  margin-top: 1px;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-btn {
+  width: 7rem;
+  margin-left: 2rem;
+  padding: 0.8rem;
+  border-radius: 5%;
+  background-color: var(--carnelian);
+}
+
+.project-btn a {
+  text-decoration: none;
   color: var(--white);
 }
+.project-btn:hover {
+  background-color: var(--imperial-red);
+}
+.project-card-content:hover {
+  color: var(--blood-red);
+}
+
 /* my contacts section styled here */
 .my-contacts {
   background-color: var(--carnelian);
   color: var(--white);
 }
+
 .my-contacts h3 {
   text-align: center;
   padding: 2rem;
@@ -238,6 +269,7 @@ h2 {
   .navlinks-container,
   .about-container,
   .projects-container,
+  .btn-container,
   .contacts-container {
     flex-direction: column;
     flex-wrap: wrap;
@@ -263,7 +295,17 @@ h2 {
 
   /*change project cards size*/
   .project-card:first-child {
-    width: 90%;
+    width: 80%;
+  }
+
+  .project-card {
+    width: 18rem;
+    margin: 2rem 0;
+  }
+
+  .project-btn {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
   }
 }
 
@@ -277,8 +319,13 @@ h2 {
     flex-wrap: wrap;
     align-content: center;
   }
+
   .about-container img {
     margin: 0rem;
+  }
+
+  .project-btn {
+    margin-bottom: 0.5rem;
   }
 }
 

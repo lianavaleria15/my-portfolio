@@ -2,9 +2,26 @@
 
 Portfolio showcasing my projects built using HTML5 and CSS3 frameworks.
 
+## Table of Contents
+
+- [Personal Portfolio - HTML, CSS](#personal-portfolio---html-css)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Link deployed application](#link-deployed-application)
+  - [Technologies used](#technologies-used)
+    - [HTML5](#html5)
+    - [CSS3](#css3)
+  - [Contact Me](#contact-me)
+  - [License](#license)
+    - [MIT License](#mit-license)
+  - [Screenshots application](#screenshots-application)
+    - [Small devices](#small-devices)
+    - [Medium devices](#medium-devices)
+    - [Large devices](#large-devices)
+
 ## Description
 
-In this project I built my personal portfolio using HTML and CSS. I included 3 main sections: about me, my projects and my contacts. I also built some animations in CSS, which I am planning to improve once I master JavaScript.
+In this project I built my personal portfolio using HTML and CSS. I included 3 main sections: about me, my projects and my contacts. I also built some animations in CSS, which I am planning to improve once I master JavaScript. In the navbar there is an extra link towards a downloadable version of my resume.
 
 ## Link deployed application
 
@@ -30,24 +47,45 @@ Click [here](https://lianavaleria15.github.io/my-portfolio) to view the deployed
 - [x] used `@keyframes` property to add animations for headings on top of banner image (transitions from left and right) and the projects cards (grow card size, when hovered over)
 - [x] used pseudo-class `:first-child` to apply larger size property on the first project card
 
+## Contact Me
+
+For contributing, feedback or any inquiries, feel free to contact me on my email:
+[liana.valeria15@gmail.com](mailto:liana.valeria15@gmail.com)
+
+## License
+
+### MIT License
+
+Copyright (c) 2021 Liana-Valeria Laurentiu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 ## Screenshots application
-
-### X-small devices
-
-![screenshot x-small device](./assets/images/screenshots/screenshot-1.png)
 
 ### Small devices
 
-![screenshot small device](./assets/images/screenshots/screenshot-2.png)
+![screenshot small device](./assets/images/screenshots/mobile_2.png)
 
 ### Medium devices
 
-![screenshot medium device](./assets/images/screenshots/screenshot-3.png)
+![screenshot medium device](./assets/images/screenshots/tablet_2.png)
 
 ### Large devices
 
-![screenshot large device](./assets/images/screenshots/screenshot-4.png)
-
-### X-large devices
-
-![screenshot x-large device](./assets/images/screenshots/screenshot-5.png)
+![screenshot large device](./assets/images/screenshots/desktop_2.png)
