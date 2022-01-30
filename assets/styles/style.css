@@ -163,8 +163,13 @@ h2 {
   object-fit: contain;
 }
 
+.project-card:nth-child(2) {
+  width: 100%;
+  object-fit: contain;
+}
+
 /*here animation for project cards when hovered*/
-.project-card:hover:not(:first-child) {
+.project-card:hover:not(:first-child, :nth-child(2)) {
   animation: grow 0.5s ease-out;
   transform: scale(1.2);
   z-index: 2;
