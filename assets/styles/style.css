@@ -53,14 +53,14 @@
       rgba(238, 197, 197, 0.7),
       rgba(83, 77, 77, 0.2)
     ),
-    url("../images/portfolio-images/hero-image.jpg");
+    url("../images//portfolio-images/data_analytics.png");
   height: 42rem;
   background-position: center;
   background-size: cover;
 }
 
 .hero-image:hover {
-  background-image: url("../images/portfolio-images/hero-image.jpg");
+  background-image: url("../images/portfolio-images/data_analytics.png");
 }
 
 .hero-image h1,
@@ -98,7 +98,9 @@ h2 {
   font-size: 2rem;
   color: var(--imperial-red);
 }
+
 .about-container {
+  margin:20px 80px;
   padding: 4rem;
   display: flex;
   flex-wrap: wrap;
@@ -110,7 +112,6 @@ h2 {
 .about-container img {
   margin: 10rem;
   box-shadow: 0 0 15px 8px var(--light-gray);
-  /* padding: 0.5rem; */
   width: 16rem;
   border-radius: 10%;
   object-fit: contain;
@@ -119,15 +120,17 @@ h2 {
   flex: 6 0;
 }
 
-.about-text h4 {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.5rem;
-  color: var(--eerie-black);
+.about-text h4,p {
+  text-align: center;  
 }
 
+.about-text h4{
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: var(--ruby-red);
+  margin-top:10rem;
+}
 .about-text p {
-  text-align: justify;
   font-size: 1rem;
   font-weight: 500;
   max-width: 100rem;
