@@ -34,16 +34,18 @@
 }
 
 .navbar-links a {
+  margin:0.2rem;
   text-decoration: none;
   padding: 1rem;
   font-size: 1.4rem;
   color: var(--ruby-red);
+  border: 0.1rem solid var(--carnelian);
 }
 
 .navbar-links a:hover {
   color: var(--imperial-red);
   font-size: 1.6rem;
-  border-bottom: 0.2rem solid var(--rich-black-fogra-39);
+  border: 0.1rem solid var(--ruby-red);
 }
 
 /* background image div styling here with hover effect */
@@ -63,7 +65,7 @@
   background-image: url("../images/portfolio-images/data_analytics.png");
 }
 
-.hero-image h1,
+/*.hero-image h1,
 h2 {
   color: var(--white);
   position: absolute;
@@ -86,6 +88,7 @@ h2 {
   font-size: 4rem;
   animation: moveInFromRight 3s ease;
 }
+*/
 
 /*about me section with image and text container here*/
 .about-section {
@@ -160,19 +163,9 @@ h2 {
   box-shadow: 0 0 15px 8px var(--light-gray);
 }
 
-/*pseudo-class function to change the size of the first project card*/
-.project-card:first-child {
-  width: 100%;
-  object-fit: contain;
-}
-
-.project-card:nth-child(2) {
-  width: 100%;
-  object-fit: contain;
-}
 
 /*here animation for project cards when hovered*/
-.project-card:hover:not(:first-child, :nth-child(2)) {
+.project-card:hover{
   animation: grow 0.5s ease-out;
   transform: scale(1.2);
   z-index: 2;
