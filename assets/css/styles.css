@@ -1,1 +1,38 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    max-width: 800px;
+    margin: 0 auto;
+    padding:20px;
+    background-color:#dee2ff ;
+}
 
+h1{
+    color: #450920;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    display:block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border-color: #8e9aaf;
+}
+
+/*styling links*/
+a {
+    color:#450920;
+    text-decoration:none;
+
+}
+
+a:hover{
+    color: #efd3d7;
+}
+
+p {
+    line-height: 1.6;
+    color: #450920;
+    text-align: justify;
+}
