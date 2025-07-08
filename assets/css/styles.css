@@ -33,6 +33,7 @@ body{
     padding: 0.5rem 1rem;
     color:#450920;
 }
+
 .main-nav a:hover{
     color: #efd3d7;
 }
@@ -70,16 +71,21 @@ img{
     border-color: #8e9aaf;
 }
 
-/*styling links*/
-a {
-    
-    text-decoration:none;
-
+.contact-section h2{
+    text-align: center;
 }
-
-
-p {
-    line-height: 1.6;
+.about-section p {
     color: #450920;
     text-align: justify;
 }
+
+/*footer styling*/
+.footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: #a69eb0;
+    color: white;
+    margin-top: 2rem;
+    bottom:0;
+}
+  
