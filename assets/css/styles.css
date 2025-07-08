@@ -6,9 +6,9 @@ body{
     background-color:#dee2ff ;
 }
 
-h1{
+h1,h2{
     color: #450920;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 img{
